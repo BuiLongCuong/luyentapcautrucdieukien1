@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</h1>
+<b>Số phút đã dùng:</b>
+<input type="text" id="nhap">
+<button onclick="tinh_toan()">Tính</button>
+<p>1500Đ/phút</p>
+<p id="result">Số cước điện thoại :</p>
+<script>
+    function tinh_toan() {
+        let a=+document.getElementById("nhap").value;
+        let b;
+        b=a*1500;
+        document.getElementById("result").innerHTML= "Số cước điện thoại :" + b +"Đ"
+    }
+
+</script>
+</body>
+</html>

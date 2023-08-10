@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</h1>
+<b>Số hàng bán được :</b>
+<input type="text" id="nhap">
+<button onclick="kq()">Tính</button>
+<p id="result1">Số tiền có được sau khi bán hàng:</p>
+<p id="result2">Số tiền hoa hồng nhận được:</p>
+<script>
+    function kq() {
+        let a=+document.getElementById("nhap").value;
+        let b;
+        let c;
+        b=a*40.000;
+        document.getElementById("result1").innerHTML ="Số tiền có được sau khi bán hàng: " + b +" Đ"
+        c=(b*15)/100
+        document.getElementById("result2").innerHTML ="Số tiền hoa hồng nhận được: " + c+" Đ"
+    }
+    
+</script>
+</body>
+</html>

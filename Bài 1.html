@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không</h1>
+<b>Nhập số a:</b>
+<input type="text" id="number1">
+<br>
+<b>Nhập số b:</b>
+<input type="text" id="number2">
+<br>
+<button onclick="tinh()">Tính toán</button>
+<script>
+    function tinh() {
+        let a=+document.getElementById("number1").value;
+        let b=+document.getElementById("number2").value;
+        if (a%b==0){
+            alert("Số a chia hết cho số b")
+        }else
+            alert("Số a không chia hết cho số b")
+    }
+
+
+</script>
+</body>
+</html>
